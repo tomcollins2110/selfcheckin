@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) =>{
 
 const sendData = (usernameVal, sRate, Count) => {
     if(sRate === Count){
-        swal("Hello " + usernameVal , "You are Checked in, check email door PIN", "success");
+        swal("Hello " + usernameVal , "You are Checked in! Please check your emails for additional information.", "success");
     }
 }
 
@@ -87,7 +87,7 @@ function Validate(){
         setErrorMsg(password, 'Pin cannot be blank');
     }
     else if(passwordVal.length <= 4){
-        setErrorMsg(password, 'Min 4 char');
+        setErrorMsg(password, 'Min 5 char');
     }
     else{
         setSuccessMsg(password);
