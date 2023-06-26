@@ -44,14 +44,14 @@ const isEmail = (emailVal) =>{
 
 function Validate(){
     const usernameVal = username.value.trim();
-    const lastnameVal = lastname.value.trim();
+    const reservationnumVal = reservationnum.value.trim();
     const emailVal = email.value.trim();
     const passwordVal = password.value.trim();
     const cpasswordVal = cpassword.value.trim();
 
-    //username
+    //guestname
     if(usernameVal === ""){
-        setErrorMsg(username, 'first name cannot be blank');
+        setErrorMsg(username, 'Name cannot be blank');
     }
     else if(usernameVal.length <=2){
         setErrorMsg(username, 'min 3 char');
@@ -60,12 +60,23 @@ function Validate(){
         setSuccessMsg(username);
     }
 
+    //reservation 
+    if(reservationnumVal === ""){
+        setErrorMsg(reservationnum, 'Res. No. cannot be blank');
+    }
+    else if(reservationnumVal.length <=2){
+        setErrorMsg(reservationnum, 'Min 3 char');
+    }
+    else{
+        setSuccessMsg(reservationnum);
+    }
+
     //email
     if(emailVal === ""){
-        setErrorMsg(email, 'email cannot be blank');
+        setErrorMsg(email, 'Email cannot be blank');
     }
     else if(!isEmail(emailVal)){
-        setErrorMsg(email, 'email is not valid');
+        setErrorMsg(email, 'Email is not valid');
     }
     else{
         setSuccessMsg(email);
@@ -73,10 +84,10 @@ function Validate(){
 
     //password
     if(passwordVal === ""){
-        setErrorMsg(password, 'password cannot be blank');
+        setErrorMsg(password, 'Pin cannot be blank');
     }
-    else if(passwordVal.length <= 7){
-        setErrorMsg(password, 'min 8 char');
+    else if(passwordVal.length <= 4){
+        setErrorMsg(password, 'Min 4 char');
     }
     else{
         setSuccessMsg(password);
@@ -84,7 +95,7 @@ function Validate(){
 
     //confirm password
     if(cpasswordVal === ""){
-        setErrorMsg(cpassword, 'confirm password cannot be blank');
+        setErrorMsg(cpassword, 'PIN cannot be blank');
     }
     else if(passwordVal != cpasswordVal){
         setErrorMsg(cpassword, 'Not Matched!');
