@@ -31,7 +31,9 @@ I left it as it is because unitl now,when I change it according to the error, th
 
 ## Deployment
 
-___
+The site is deployed through github.
+
+https://github.com/tomcollins2110/selfcheckin
 
 ## Credit
 
