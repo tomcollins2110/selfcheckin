@@ -1,39 +1,26 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Introduction
 
-Welcome,
+A self check in page for a hotel with html and java script.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![blurred](https://github.com/tomcollins2110/selfcheckin/assets/104827144/2b3e0043-4329-4047-8864-2a6af3e7cf38)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+## Features
 
-## Codeanywhere Reminders
+The site has a basic html layout but has two key java script features. The pop up modal comes in the form of a 
+welcome message that blurs the background when it is active. There is a short message to give the user a little starter info
+to get them on track with checking in.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The second feature on the site is a form with validation features. The page shows error messages when the fields are not complete
+correctly. The user must input the information as required by the java script code to check in.
 
-`python3 -m http.server`
+There is a successful pop up when the form is complete to finish off the user experience.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Credit
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+https://www.youtube.com/watch?v=snhpoxtLugU&t=18s
 
-`http_server`
+https://www.youtube.com/watch?v=sEJB7FtBoug&t=26s
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+https://www.youtube.com/watch?v=MFn3DPjRtXE&t=1281s
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
