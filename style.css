@@ -8,6 +8,7 @@
 }
 
 body{
+    padding: 15px;
     background: rgb(244, 203, 248);
     display: flex;
     align-items: center;
@@ -18,13 +19,25 @@ body{
     background-size: cover;
 }
 
+.container#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
 .container{
+    position: relative;
     background-color: rgb(255, 255, 255, 0.7);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0,0,0,0.048), 0 12.8px 10.5px rgba(0,0,0,0.58) ;
     width: 550px;
-    max-width: 100%;
+    max-width: 100vh;
+}
+
+.container .content {
+    position: relative;
+    max-width: 800px;
 }
 
 .header{
@@ -121,3 +134,36 @@ body{
 .form .btn:hover{
     background: #c59cd8;
 }
+
+a {
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #111;
+}
+
+#popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.34);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#popup.active {
+    top: 40%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+

@@ -1,3 +1,13 @@
+function toggle(){
+    event.preventDefault();
+
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active')
+    
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+}
+
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const lastname = document.getElementById('lastname');

@@ -13,11 +13,11 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container" id="blur">
         <div class="header">
-            <h2>Self Check- In</h2>
+            <h2>Self Check-In</h2>
         </div>
-
+        <a href="" onclick="toggle()">Welcome (click here)</a>
         <form action="" class="form" id="form">
             <div class="form-control">
                 <label>Name</label>
@@ -44,7 +44,7 @@
             </div>
 
             <div class="form-control">
-                <label>PIN</label>
+                <label>Choose PIN</label>
                 <input type="password" name="" id="password" placeholder="Choose a PIN for door" autocomplete="off">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
@@ -62,12 +62,14 @@
         </form>
     </div>
 
-
-
-
-
-
-
+    <div id="popup">
+        <h2>Welcome to your rest zone..</h2>
+        <p> You've arrived. Well done! With our simple self Check-In procedure,
+            you are just a few minutes from your private space. Just remember to 
+            choose a memorable pin that you will use for your door.
+        </p>
+            <a href="#" onclick="toggle()">Continue</a>
+    </div>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
